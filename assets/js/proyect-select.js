@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const arreglo = [
         {
             title: 'FAGIA - API Rest en rust',
-            description:  `Fagia es una iniciativa que busca apoyar a instituciones benéficas a contactar con donadores de alimentos de una manera rápida y sencilla, utilizando un API Rest para manejar las cantidades de alimentos donados, la información de las organizaciones y la de los donadores.`,
+            description:  `Fagia es una  un API Rest para manejar las cantidades de alimentos donados, la información de las organizaciones y la de los donadores, busca apoyar a instituciones benéficas a contactar con donadores de alimentos de una manera rápida y sencilla.`,
             github_link: 'https://github.com/sebatihm/fagia',
             image_dir: "./assets/images/proyect-images/1.png"
         },
