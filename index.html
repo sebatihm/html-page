@@ -14,7 +14,7 @@
             <ul align="left" >
                 <li style="justify-content: center; margin: 5px;"><img src="./assets/images/icons/dev.png" height="50px" width="50px" style="object-fit: cover;"></li>
             </ul>
-            <ul>
+            <ul class="mobile-no">
                 <li style="float: right;"><a  class="ar" href="#Home">Home</a></li>
                 <li style="float: right;" ><a class="ar" href="#Contact">Contact</a></li>
                 <li style="float: right;"><a  class="ar" href="#Project">Projects</a></li>
@@ -76,17 +76,19 @@
         
 
         <div style="margin-top: 80px; height: fit-content;" class="container-vertical">
+            
+            
             <h2>Tecnologias que manejo</h2>
-            <div style="display:-ms-flexbox; height: 50px; float: left; column-gap: 10px;">
-                <img src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white" height="100%" style="border-radius: 15px;" alt="C++">
-                <img src="https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white" height="100%" style="border-radius: 15px;" alt="Rust">
-                <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" height="100%" style="border-radius: 15px;" alt="Java">
-                <img src="https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white" height="100%" style="border-radius: 15px;" alt="Laravel">
-                <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" height="100%" style="border-radius: 15px;" alt="JavaScript">
-                <img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" height="100%" style="border-radius: 15px;" alt="Docker">
+            <div style="grid-template-columns: 50%; height: fit-content;">
+                    <img class="img-languages" src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white"  style="border-radius: 15px;" alt="C++">
+                    <img class="img-languages" src="https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white"  style="border-radius: 15px;" alt="Rust">
+                    <img class="img-languages" src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" style="border-radius: 15px;" alt="Java">
+                    <img class="img-languages" src="https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white" style="border-radius: 15px;" alt="Laravel">
+                    <img class="img-languages" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" style="border-radius: 15px;" alt="JavaScript">
+                    <img class="img-languages" src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" style="border-radius: 15px;" alt="Docker">
             </div>
 
-            <div id="Project">
+            <div id="Project" class="mobile-no">
                 <h2>Proyectos en lo que he trabajado</h2>
                 <div class="container" style="margin: 50px; height: 500px; gap: 3%;">
 
@@ -118,7 +120,7 @@
                     <div class="container-40 container card-image" style="height: 100%;">
                             <img id="proyect-image" class="container-80" src="./assets/images/proyect-images/1.png" alt="Placeholder" height="100%" style="object-fit: cover; border-bottom-left-radius: 15px; border-top-left-radius: 15px;">
 
-                            <div class="container-20" style="background-color: rgb(182, 182, 0); height: 100%; border-right: 15px; border-bottom-right-radius: 15px; border-top-right-radius: 15px;">
+                            <div class="container-20 aside-card">
                             </div>
 
                     </div>
@@ -131,10 +133,62 @@
             </div>
         </div>
 
+        <div class="mobile-yes">
+            <div class="container">
+
+                <div>
+                    <h1>Proyectos en lo que he trabajado</h1>
+                </div>
+
+                <div style="display: flex;">
+                    <div class="card" style="height: 400px;  width: 80%;">
+                    <div class="container-vertical" style="display: flex; flex-direction: column; height: max-content;">
+                        <div style="margin: 5%; width: 90%; display: grid; grid-template-rows: 20% 55% 20%; height: 400px;">
+
+                            <h2 id="proyect-title-mobile" style="font-size: x-large; align-items: center;height: 20%;"> FAGIA - API Rest en rust</h2>
+                                
+                                <div style="height: 50%">
+                                    <p id="proyect-description-mobile" style="font-size: larger;">
+                                        Fagia es una iniciativa que busca apoyar a instituciones benéficas a contactar con donadores de alimentos
+                                        de una manera rápida y sencilla, utilizando un API Rest para manejar las cantidades de alimentos donados, 
+                                        la información de las organizaciones y la de los donadores.
+                                    </p>
+                                </div>
+                                
+                            
+                            <a id="proyect-github-mobile" href="">
+                                <button class="proyect-media-btn"> Github </button>
+                            </a>
+                        </div>
+                        
+                        
+                    </div>
+
+                    </div>
+                    <div class="aside-card">
+                </div>
+
+                </div>
+                
+                <div style="display: flex; justify-content: center; height: max-content; gap: 20%;">
+                   
+                        <button id="back-mobile" class="button-next" style="font-size: 100px; height: 150px;">〈</button> 
+                        <button id="next-mobile" class="button-next" style="font-size: 100px; height: 150px;">〉</button>
+                
+
+                </div>
+
+                <div>
+
+                </div>
+            </div>
+
+        </div>
+
         
 
     </main>
-    <footer id="Contact">
+    <footer id="Contact" class="mobile-no">
 
         <div class="container" style="gap: 5%; margin-top:2%;">
             <div class="container container-50" style="justify-content: center; margin-left: 25%; margin-right: 25%;">
@@ -147,17 +201,44 @@
 
                 <div class=" container container-30" style="justify-content: center;">
                     <a href="https://github.com/sebatihm">
-                        <img src="./assets/images/icons/github.png" width="100px" height="100px" style="object-fit: cover;">
+                        <img src="./assets/images/icons/github.png" class="footer-img">
                     </a>
                 </div>
                 
                 <div class=" container container-30" style="justify-content: center;">
                     <a href="mailto:sebashermon.04@gmail.com">
-                        <img src="./assets/images/icons/mail.png" width="100px" height="100px" style="object-fit: cover;">
+                        <img src="./assets/images/icons/mail.png" class="footer-img">
                     </a>
                 </div>
 
             </div>
+        </div>
+
+        <p style="text-align: center; margin-top: 2%; font-weight: bold;">SebatiHM 2025</p>
+
+
+    </footer>
+
+    <footer id="Contact-mobile" class="mobile-yes">
+
+        <div  style="gap: 5%; margin-top:2%; flex-direction: row; display: flex; flex-wrap: wrap; ">
+                <div style="justify-content: center; width: 30%;">
+                    <a href="https://www.linkedin.com/in/sebasti%C3%A1n-de-jes%C3%BAs-hern%C3%A1ndez-montero-933776361/">
+                        <img src="./assets/images/icons/linkedin.png" class="footer-img">
+                    </a>
+                </div>
+
+                <div style="justify-content: center; width: 30%;">
+                    <a href="https://github.com/sebatihm">
+                        <img src="./assets/images/icons/github.png" class="footer-img">
+                    </a>
+                </div>
+                
+                <div style="justify-content: center; width: 30%;">
+                    <a href="mailto:sebashermon.04@gmail.com">
+                        <img src="./assets/images/icons/mail.png" class="footer-img">
+                    </a>
+                </div>
         </div>
 
         <p style="text-align: center; margin-top: 2%; font-weight: bold;">SebatiHM 2025</p>

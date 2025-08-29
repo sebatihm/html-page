@@ -2,10 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let index = 0;
     const arreglo = [
         {
-            title: 'FAGIA - Implementacion de un API Rest en rust',
-            description:  `Fagia es una iniciativa que busca apoyar a instituciones benéficas a contactar con donadores de alimentos"
-                            de una manera rápida y sencilla, utilizando un API Rest para manejar las cantidades de alimentos donados, "
-                            la información de las organizaciones y la de los donadores.`,
+            title: 'FAGIA - API Rest en rust',
+            description:  `Fagia es una iniciativa que busca apoyar a instituciones benéficas a contactar con donadores de alimentos de una manera rápida y sencilla, utilizando un API Rest para manejar las cantidades de alimentos donados, la información de las organizaciones y la de los donadores.`,
             github_link: 'https://github.com/sebatihm/fagia',
             image_dir: "./assets/images/proyect-images/1.png"
         },
@@ -46,7 +44,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
     });
 
+    document.getElementById('back-mobile').addEventListener('click', function () {
+        if(index <= 0){
+            index = arreglo.length - 1;
+        }else{
+            index = index - 1;
+        }
+        loadProjectResources(index);
+
+    });
+
     document.getElementById('next').addEventListener('click', function () {
+        if( index >= arreglo.length - 1){
+            index = 0;
+        }else{
+            index = index + 1;
+        }
+        loadProjectResources(index);
+
+    });
+    
+    document.getElementById('next-mobile').addEventListener('click', function () {
         if( index >= arreglo.length - 1){
             index = 0;
         }else{
@@ -57,10 +75,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function loadProjectResources(index){
-        document.getElementById('proyect-title').innerText = arreglo[index].title;
-        document.getElementById('proyect-description').innerText = arreglo[index].description;
-        document.getElementById('proyect-github').setAttribute("href", arreglo[index].github_link);
-        document.getElementById('proyect-image').setAttribute("src", arreglo[index].image_dir );
+        if(window.innerWidth > 800){
+            document.getElementById('proyect-title').innerText = arreglo[index].title;
+            document.getElementById('proyect-description').innerText = arreglo[index].description;
+            document.getElementById('proyect-github').setAttribute("href", arreglo[index].github_link);
+            document.getElementById('proyect-image').setAttribute("src", arreglo[index].image_dir );
+
+        }else{  
+            document.getElementById('proyect-title-mobile').innerText = arreglo[index].title;
+            document.getElementById('proyect-description-mobile').innerText = arreglo[index].description;
+            document.getElementById('proyect-github-mobile').setAttribute("href", arreglo[index].github_link);
+            // document.getElementById('proyect-image-mobile').setAttribute("src", arreglo[index].image_dir );
+
+        }
+
 
     }
 
