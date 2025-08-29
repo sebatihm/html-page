@@ -71,6 +71,12 @@
     border-radius: 15px;    
 }
 
+.card-mobile{
+    background-color: rgb(16, 16, 16);
+    border-bottom-left-radius: 15px; 
+    border-top-left-radius: 15px;   
+}
+
 .font-big{
     font-size: larger;
 }
