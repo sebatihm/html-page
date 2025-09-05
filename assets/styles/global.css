@@ -145,7 +145,14 @@
 .img-languages{
     height:50px;
 }
+img.img-esp{
+    width: 100%;
+    height: 100%;
+}
 
+img.hgh-img{
+    height: 100%;
+}
 .footer-img{
     object-fit: cover;
     width:100px;
