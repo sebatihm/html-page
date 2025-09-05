@@ -99,6 +99,8 @@
 
 
 .proyect-media-btn{
+    display: inline-block;
+    line-height: 50px;
     border: 0;
     background-color:rgb(198, 195, 0);
     color: azure;
@@ -106,6 +108,8 @@
     width: 100px;
     font-size: larger;
     border-radius: 15px;
+    text-decoration: none;
+    text-align: center;
 
 }
 
@@ -199,6 +203,10 @@ body{
     margin: 0;
     background-color: #080808;
     color: aliceblue;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 footer {
